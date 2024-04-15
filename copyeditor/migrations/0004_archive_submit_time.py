@@ -7,13 +7,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('copyeditor', '0003_archive'),
+        ("copyeditor", "0003_archive"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='archive',
-            name='submit_time',
+            model_name="archive",
+            name="submit_time",
             field=models.DateTimeField(default=datetime.datetime.now),
         ),
     ]

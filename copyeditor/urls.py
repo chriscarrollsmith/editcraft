@@ -1,5 +1,4 @@
 from django.urls import path
-
 from . import views
 
 urlpatterns = [
@@ -12,6 +11,8 @@ urlpatterns = [
     path("uploader", views.uploader, name="uploader"),
     path("workshop", views.workshop, name="workshop"),
     path("workshop/<str:id>", views.workshop_render, name="workshop_render"),
-    path("workshop/<str:id>/download", views.workshop_download, name="workshop_download"),
-    path("api/workshop_api/<str:id>", views.workshop_api, name="workshop_api"),
+    path(
+        "workshop/<str:id>/download", views.workshop_download, name="workshop_download"
+    ),
+    path("api/workshop_api/<str:id>", views.workshop_api, name="workshop_api")
 ]

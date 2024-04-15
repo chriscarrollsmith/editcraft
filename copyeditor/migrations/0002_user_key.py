@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('copyeditor', '0001_initial'),
+        ("copyeditor", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='user',
-            name='key',
-            field=models.CharField(blank=True, default='', max_length=100),
+            model_name="user",
+            name="key",
+            field=models.CharField(blank=True, default="", max_length=100),
         ),
     ]

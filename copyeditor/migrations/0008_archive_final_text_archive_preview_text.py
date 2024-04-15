@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('copyeditor', '0007_archive_tracker'),
+        ("copyeditor", "0007_archive_tracker"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='archive',
-            name='final_text',
-            field=models.TextField(default=''),
+            model_name="archive",
+            name="final_text",
+            field=models.TextField(default=""),
         ),
         migrations.AddField(
-            model_name='archive',
-            name='preview_text',
-            field=models.TextField(default=''),
+            model_name="archive",
+            name="preview_text",
+            field=models.TextField(default=""),
         ),
     ]

@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('copyeditor', '0005_archive_title'),
+        ("copyeditor", "0005_archive_title"),
     ]
 
     operations = [
         migrations.RenameField(
-            model_name='archive',
-            old_name='text',
-            new_name='edited_text',
+            model_name="archive",
+            old_name="text",
+            new_name="edited_text",
         ),
         migrations.AddField(
-            model_name='archive',
-            name='original_text',
-            field=models.TextField(default=''),
+            model_name="archive",
+            name="original_text",
+            field=models.TextField(default=""),
         ),
     ]

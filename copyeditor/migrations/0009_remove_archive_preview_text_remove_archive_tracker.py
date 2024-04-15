@@ -6,16 +6,16 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('copyeditor', '0008_archive_final_text_archive_preview_text'),
+        ("copyeditor", "0008_archive_final_text_archive_preview_text"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='archive',
-            name='preview_text',
+            model_name="archive",
+            name="preview_text",
         ),
         migrations.RemoveField(
-            model_name='archive',
-            name='tracker',
+            model_name="archive",
+            name="tracker",
         ),
     ]

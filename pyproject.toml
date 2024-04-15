@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "copyeditor"
+version = "0.1.0"
+description = ""
+authors = ["Christopher Carroll Smith <chriscarrollsmith@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.4"
+openai = "^1.17.1"
+marvin = "^2.3.1"
+diff-match-patch = "^20230430"
+python-dotenv = "^1.0.1"
+python-docx = "^1.1.0"
+gunicorn = "^21.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

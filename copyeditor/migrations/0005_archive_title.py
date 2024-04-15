@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('copyeditor', '0004_archive_submit_time'),
+        ("copyeditor", "0004_archive_submit_time"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='archive',
-            name='title',
-            field=models.CharField(default='Untitled', max_length=50),
+            model_name="archive",
+            name="title",
+            field=models.CharField(default="Untitled", max_length=50),
         ),
     ]

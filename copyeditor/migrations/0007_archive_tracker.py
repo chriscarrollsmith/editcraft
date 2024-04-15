@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('copyeditor', '0006_rename_text_archive_edited_text_and_more'),
+        ("copyeditor", "0006_rename_text_archive_edited_text_and_more"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='archive',
-            name='tracker',
+            model_name="archive",
+            name="tracker",
             field=models.JSONField(blank=True, default=[]),
         ),
     ]
