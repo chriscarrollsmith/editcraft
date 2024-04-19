@@ -41,15 +41,15 @@ python manage.py migrate
 
 This will create a SQLite database in the root directory of the project.
 
-## Usage
-
 To run the server, use the following command:
 
 ```bash
 poetry run python manage.py runserver
 ```
 
-The server will be running at `http://localhost:8000/`.
+## Usage
+
+The server will be running at `http://localhost:8000/`. Navigate to this URL in your web browser.
 
 On the uploader page, you may submit a text file, Word document, or paste your text directly into the web page. Click submit and let ChatGPT do the work! Longer pieces will require about 20 seconds per thousand words, so if you are editing a long piece, please have patience!
 
